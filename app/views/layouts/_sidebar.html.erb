@@ -1,7 +1,5 @@
 <div class="ui left vertical inverted labeled icon sidebar menu" id="sidebar">
-  <a class="item" href="/">
-    <i class="home icon"></i> Home
-  </a>
+  <%= link_to raw('<i class="home icon"></i> Home'), root_path, class: 'item' %>
 
   {{#if currentUser}}
   <%= link_to raw('<i class="users icon"></i> Customers'), '#', class: 'item' %>
