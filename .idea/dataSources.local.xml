@@ -16,7 +16,7 @@
     <data-source name="Rails tonycrafter: production" uuid="be83b37e-c26b-4b96-baf3-e6445f97a0ec">
       <secret-storage>master_key</secret-storage>
       <first-sync>true</first-sync>
-      <user-name>svrwqzzgqwtcqr</user-name>
+      <user-name>tonycrafter</user-name>
     </data-source>
   </component>
 </project>

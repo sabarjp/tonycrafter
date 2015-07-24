@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3947289129">
+  <component name="DataSourceManagerImpl" format="xml" hash="4066683658">
     <data-source source="LOCAL" name="Rails tonycrafter: development" uuid="d5a21b41-ae25-4005-aaee-4bcc7d95f050">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
@@ -8,10 +8,10 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1/tonycrafter_development</jdbc-url>
       <libraries>
         <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.4-1201.jdbc4.jar</url>
         </library>
         <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.4-1201.jdbc4.jar</url>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
         </library>
       </libraries>
     </data-source>
@@ -22,10 +22,10 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1/tonycrafter_test</jdbc-url>
       <libraries>
         <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.4-1201.jdbc4.jar</url>
         </library>
         <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.4-1201.jdbc4.jar</url>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
         </library>
       </libraries>
     </data-source>
@@ -33,16 +33,16 @@
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ec2-54-243-187-196.compute-1.amazonaws.com:5432/d4cd1nl0bt8faf</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tonycrafter_production</jdbc-url>
       <driver-properties>
         <property name="sslmode" value="require" />
       </driver-properties>
       <libraries>
         <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.4-1201.jdbc4.jar</url>
         </library>
         <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-9.4-1201.jdbc4.jar</url>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
         </library>
       </libraries>
     </data-source>
