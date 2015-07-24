@@ -1,0 +1,13 @@
+<div class="ui top inverted fixed menu">
+  <a class="active item" id="menu">
+    <i class="bars icon"></i> Menu
+  </a>
+  <div class="right menu">
+    {{#if currentUser}}
+    <%= render 'layouts/logout' %>
+    {{else}}
+    <%= link_to 'Login', '#', class: 'item' %>
+    <%= link_to 'Sign up', '#', class: 'item' %>
+    {{/if}}
+  </div>
+</div>

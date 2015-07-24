@@ -2,19 +2,21 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails tonycrafter: development" uuid="d5a21b41-ae25-4005-aaee-4bcc7d95f050">
-      <first-sync>true</first-sync>
       <user-name>pguser</user-name>
       <user-password>dfd8dfcbdfc3dfc6dfd9</user-password>
+      <schema-pattern>tonycrafter_development.pg_catalog tonycrafter_development.public</schema-pattern>
+      <default-schemas>tonycrafter_development.pg_catalog tonycrafter_development.public</default-schemas>
     </data-source>
     <data-source name="Rails tonycrafter: test" uuid="5986f8f1-096f-427a-b1a5-44b4e30701b7">
-      <first-sync>true</first-sync>
       <user-name>pguser</user-name>
       <user-password>dfd8dfcbdfc3dfc6dfd9</user-password>
+      <schema-pattern>tonycrafter_test.pg_catalog tonycrafter_test.public</schema-pattern>
+      <default-schemas>tonycrafter_test.pg_catalog tonycrafter_test.public</default-schemas>
     </data-source>
     <data-source name="Rails tonycrafter: production" uuid="be83b37e-c26b-4b96-baf3-e6445f97a0ec">
+      <secret-storage>master_key</secret-storage>
       <first-sync>true</first-sync>
-      <user-name>tonycrafter</user-name>
-      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddffedfe5dfe4dff3dfe9dff8dfebdfecdffedfefdff8dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <user-name>svrwqzzgqwtcqr</user-name>
     </data-source>
   </component>
 </project>

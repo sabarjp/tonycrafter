@@ -1,0 +1,13 @@
+<div class="ui left vertical inverted labeled icon sidebar menu" id="sidebar">
+  <a class="item" href="/">
+    <i class="home icon"></i> Home
+  </a>
+
+  {{#if currentUser}}
+  <%= link_to raw('<i class="users icon"></i> Customers'), '#', class: 'item' %>
+
+  <%= link_to raw('<i class="wrench icon"></i> Projects'), '#', class: 'item' %>
+  {{else}}
+  <%= link_to raw('<i class="user icon"></i> Login'), '#', class: 'item' %>
+  {{/if}}
+</div>
