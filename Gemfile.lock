@@ -65,6 +65,8 @@ GEM
     minitest (5.7.0)
     multi_json (1.11.2)
     pg (0.18.2-x86-mingw32)
+    puma (2.11.1)
+      rack (>= 1.1, < 2.0)
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -154,6 +156,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  puma (= 2.11.1)
   rails (= 4.1.8)
   rails_12factor (= 0.0.3)
   react-rails (= 1.1.0)
