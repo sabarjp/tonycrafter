@@ -1,7 +1,5 @@
 <span class="item">
-    Hi, {{currentUserName}}!
+    Hi, <%= current_user.name %>
 </span>
 
-<a class="item" id="logout">
-  Logout
-</a>
+<%= link_to "Logout", logout_path, method: "delete", class: "item" %>

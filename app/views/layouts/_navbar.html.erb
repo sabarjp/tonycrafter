@@ -3,11 +3,19 @@
     <i class="bars icon"></i> Menu
   </a>
   <div class="right menu">
-    {{#if currentUser}}
-    <%= render 'layouts/logout' %>
-    {{else}}
-    <%= link_to 'Login', '#', class: 'item' %>
-    <%= link_to 'Sign up', signup_path, class: 'item' %>
-    {{/if}}
+    <% if logged_in? %>
+        <%= render 'layouts/logout' %>
+    <% else %>
+        <%= link_to 'Login', login_path, class: 'item' %>
+        <%= link_to 'Sign up', signup_path, class: 'item' %>
+    <% end %>
   </div>
 </div>
+
+<script>
+    $(function(){
+        $('#menu').click(function(){
+            $('#sidebar').sidebar('toggle');
+        });
+    });
+</script>

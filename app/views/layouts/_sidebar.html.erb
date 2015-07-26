@@ -1,11 +1,12 @@
-<div class="ui left vertical inverted labeled icon sidebar menu" id="sidebar">
+<div class="ui left vertical inverted labeled icon menu sidebar" id="sidebar">
   <%= link_to raw('<i class="home icon"></i> Home'), root_path, class: 'item' %>
 
-  {{#if currentUser}}
-  <%= link_to raw('<i class="users icon"></i> Customers'), '#', class: 'item' %>
+  <% if logged_in? %>
+    <%= link_to raw('<i class="users icon"></i> Customers'), '#', class: 'item' %>
+    <%= link_to raw('<i class="wrench icon"></i> Projects'), '#', class: 'item' %>
 
-  <%= link_to raw('<i class="wrench icon"></i> Projects'), '#', class: 'item' %>
-  {{else}}
-  <%= link_to raw('<i class="user icon"></i> Login'), '#', class: 'item' %>
-  {{/if}}
+    <%= link_to raw('<i class="user icon"></i> Profile'), current_user, class: 'item' %>
+  <% else %>
+    <%= link_to raw('<i class="user icon"></i> Login'), login_path, class: 'item' %>
+  <% end %>
 </div>
