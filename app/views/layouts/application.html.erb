@@ -2,6 +2,7 @@
 <html>
 <head>
   <title><%= full_title(yield(:title)) %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,8 +16,8 @@
 
   <div class="pusher">
     <% flash.each do |message_type, message| %>
-        <div class="<%= message_type %>">
-          <%= message %>
+        <div class="ui <%= message_type %> message">
+          <p><%= message %></p>
         </div>
     <% end %>
 

@@ -1,23 +1,33 @@
-<% provide(:title, "Sign up") %>
+<% provide(:title, 'Sign up') %>
 
+<div class="ui container login">
+  <h1>Sign up</h1>
+  <p>Sign up for our awesome services!</p>
 
-<h1>Sign up</h1>
-<p>Sign up for our awesome services!</p>
-
-<%= form_for(@user) do |f| %>
     <%= render 'shared/error_messages' %>
+    <%= form_for(@user, html: { class: 'ui form' }) do |f| %>
+        <div class="field">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+        </div>
 
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+        <div class="field">
+            <%= f.label :email %>
+            <%= f.email_field :email %>
+        </div>
 
-    <%= f.label :email %>
-    <%= f.email_field :email %>
+        <div class="field">
+            <%= f.label :password %>
+            <%= f.password_field :password %>
+        </div>
 
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+        <div class="field">
+            <%= f.label :password_confirmation, 'Confirmation' %>
+            <%= f.password_field :password_confirmation %>
+        </div>
 
-    <%= f.label :password_confirmation, "Confirmation" %>
-    <%= f.password_field :password_confirmation %>
-
-    <%= f.submit "Create my account", class: "" %>
-<% end %>
+        <div class="field">
+            <%= f.submit 'Create my account', class: 'ui button' %>
+        </div>
+    <% end %>
+</div>

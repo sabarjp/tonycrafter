@@ -14,9 +14,25 @@
   @include box_sizing;
 }
 
-.pusher{
+.pusher {
   padding-top: 50px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.footer {
+  padding: 15px 40px;
+
+  a {
+    float: right;
+    display: block;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.container.login {
+    width: 400px;
+  }
 }
