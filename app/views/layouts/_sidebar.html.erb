@@ -5,7 +5,9 @@
     <%= link_to raw('<i class="users icon"></i> Customers'), '#', class: 'item' %>
     <%= link_to raw('<i class="wrench icon"></i> Projects'), '#', class: 'item' %>
 
+    <%= link_to raw('<i class="user icon"></i> All users'), users_path, class: 'item' %>
     <%= link_to raw('<i class="user icon"></i> Profile'), current_user, class: 'item' %>
+    <%= link_to raw('<i class="user icon"></i> Settings'), edit_user_path(current_user), class: 'item' %>
   <% else %>
     <%= link_to raw('<i class="user icon"></i> Login'), login_path, class: 'item' %>
   <% end %>

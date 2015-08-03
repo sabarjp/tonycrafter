@@ -1580,6 +1580,7 @@
       <column name="created_at" sqlType="timestamp" precision="29" scale="6" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="timestamp" precision="29" scale="6" nullable="true" jdbcType="93"/>
       <column name="password_digest" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="remember_digest" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="users_pkey" columns="id"/>
       <index name="index_users_on_email" unique="true" columns="email"/>
     </table>
@@ -20716,6 +20717,7 @@
       <column name="created_at" sqlType="timestamp" precision="29" scale="6" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="timestamp" precision="29" scale="6" nullable="true" jdbcType="93"/>
       <column name="password_digest" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="remember_digest" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="users_pkey" columns="id"/>
       <index name="index_users_on_email" unique="true" columns="email"/>
     </table>

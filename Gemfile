@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.8'
 gem 'bcrypt', '3.1.10'
+gem 'faker', '1.4.2'
+gem 'will_paginate', '3.0.7'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
 gem 'semantic-ui-sass', '2.0.4.0'
